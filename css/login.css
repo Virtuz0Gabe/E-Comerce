@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Wix+Madefor+Display:wght@700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(125deg, #ab1717e3 0.55%, #431928 80%);
+    background-repeat: repeat;
+}
+
+.rectangle{
+    display: flex;
+
+    justify-content: space-between;
+
+    background-image: url("../img/login-screen.png");
+    background-size: contain;
+    background-color: #de0e34;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 74vw;
+    min-width: 385px;
+    height: 70vh;
+
+    box-shadow: 0px 0px 101px 0px rgba(0,0,0,0.5);
+}
+
+form{
+    background-color: white;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 69px 30px;
+
+    width: 48%;
+    min-width: 385px;
+
+    border-radius: 60px 10px 10px 0px;
+}
+
+.title{
+    display: flex;
+    width: 52%;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 4vw;
+    margin-inline: 5px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: white;
+}
+
+
+@media only screen and (max-width: 700px) {
+    h1{
+        display: none;
+    }
+}
+
+.item label + input{
+    margin-top: 8px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+    border: none;
+
+    width: 100%;
+    height: 5vh;
+}
+
+input[type="text"]{
+    outline: none;
+    border-bottom: 2px solid #75758b;
+    transition: 0.2s;
+    padding-left: 3px;
+}
+
+input[type="text"]:focus{
+    border-bottom: 4px solid #de0e34;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.50);
+}
+
+input[type="text"]:valid:not(:focus){
+    border-bottom: 2px solid #de0e34;
+}
+
+input[type="submit"]{
+    letter-spacing: 1.5px;
+    background-color: #de0e34;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,100);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    letter-spacing: 2px;
+    background-color: #a80d29;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.msgErro{
+    padding-top: 3px;
+    color: #de0e34;
+    font-size: small;
+    
+}

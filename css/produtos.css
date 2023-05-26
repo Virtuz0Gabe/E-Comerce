@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Wix+Madefor+Display:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline-color: transparent;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+    background: linear-gradient(125deg, #ab1717e3 0.55%, #431928 80%);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #de0e34;
+
+    padding-block: 15px;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+    transition: all 0.3s;
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav a:hover{
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+nav p {
+    color: #ffffff;
+    padding-right: 1vw;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+img{
+    width: 6vh;
+}
+
+.img_carrinho{
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.img_carrinho:hover{
+    transform: scale(1.2);
+}
+
+.logo{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 24px;
+    text-align: uppercase;
+    letter-spacing: 1px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: max-content;
+    width: 100%;
+}
+
+.grid{
+    max-width: 1025px;
+
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-item{
+    flex: 1 1 250px;
+
+    min-width: 260px;
+    max-width: 325px;
+    height: 489px;
+
+    margin: 8px;
+
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+}
+
+.grid-item-img{
+    border-radius: 3px 3px 0 0;
+
+    width: 100%;
+    height: 330px;
+    background-color: #ffc29f;
+}
+
+.grid-item-info{
+    width: 100%;
+    text-align: center;
+    height: 95px;
+}
+
+.grid-item-info h3{
+    height: 52px;
+    font-weight: 500;
+}
+
+.grid-item-info p{
+    padding-top: 13px;
+    color: #75758b;
+}
+
+.btn-red{
+    border: none;
+    background-color: #de0e34;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,100);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    transition: all 0.3s;
+}
+
+.btn-red:hover{
+    transform: scale(1.02);
+    background-color: #a80d29;
+}
+
+.grid-item button{
+    width: 220px;
+    height: 36px;
+
+    margin-bottom: 15px;
+}
+
+footer{
+    text-align: center;
+
+    background-color: #431928;
+    color: white;
+
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+    padding-block: 25px;
+}
+
+.modal-container{
+    background-color: #00000099;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+}
+
+.modal-head{
+    width: 72vw;
+    height: 64px;
+    
+    padding-inline: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #de0e34;
+    color: white;
+}
+
+.modal{
+    box-shadow: 0px 0px 5px -2px rgba(0,0,0,1);
+
+    width: 72vw;
+    height: 70vh;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+}
+
+.prod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 23px 18px;
+}
+
+.prod + .prod{
+    border-top: 2px solid #ebebeb;
+}
+
+.proddesc{width: 190px;}
+.tipoprod{color: #75758b;}
+
+.buy{
+    width: 230px;
+    height: 35px;
+}
+
+.btn_close{
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn_close:hover{
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+.notif-container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    position: fixed;
+
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+}
+
+.notif{
+    background-color: #ffffff;
+    border: solid 2.5px #de0e34;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+
+    margin-top: 3vh;
+    padding: 25px;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+}
+
+.notif.show:hover{
+    opacity: 0.2;
+}
+
+.notif.show{
+    pointer-events: auto;
+    opacity: 1;
+    animation: fadein 0.3s;
+}
+
+@keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

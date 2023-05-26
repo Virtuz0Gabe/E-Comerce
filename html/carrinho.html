@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="../css/carrinho.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">SPECTASHOW</a>
+
+        <div>
+            <p id="nome_usuario"></p>
+            <img src="../img/usuario.png" alt="icone_usuario">
+            <a id="logout" href="../php/logout.php">Deslogar</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="conteudo">
+            <div class="container" id="container">
+                <div class="header_container">
+                    <a class="voltar_loja" href="produtos.html"><img src="../img/Loja.png" alt="icone_loja" title="Voltar para a Loja"></a>
+                    <a id="esvaziar_carrinho" class="esvaziar_carrinho"><img src="../img/limpar_carrinho.png" alt="icone_esvaziar" title="Esvaziar Carrinho"></a>
+                </div>
+                <div id="itens" class="itens"></div>
+                <div class="total">
+                    <p>Preço total:</p><span id="valor-total">0</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados © Bingus 2023</p>
+    </footer>
+
+    <!-- <script src="verificalogin.js"></script> -->
+    <script type="module" src="../js/carrinho.js"></script>
+</body>
+</html>
